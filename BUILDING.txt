@@ -9,6 +9,11 @@ HAVE_PTHREADS defined if this appears to be a problem.
 You may build with system-supplied zlib, bzip2 and OpenSSL (for Blowfish)
 libraries if you have them.
 
+For Debian like systems you may use this commands
+
+	apt-get install libbz2-dev libc6 libssl-dev zlib1g
+	apt-cache policy libbz2-dev libc6 libssl-dev zlib1g
+
 Zebedee:
 
     Modify the locations of the Blowfish, Zlib and bzip2 libraries,
@@ -18,16 +23,28 @@ Zebedee:
     
 blowfish-1.0.0a:
 
+    Download:
+
+	Currently unknown source, use system libs
+
     Builds without modification to the Makefile. Use "make optimize" to build
     the best version for your platform.
     
-zlib-1.2.5:
+zlib-1.2.8:
+
+    Download:
+
+	wget http://zlib.net/zlib-1.2.8.tar.gz
 
     Configure and build using:
 
 	./configure; make
 
 bzip2-1.0.6:
+
+    Download:
+
+	wget http://www.bzip.org/1.0.6/bzip2-1.0.6.tar.gz
 
     Follow the instructions in the README file
 
@@ -79,7 +96,7 @@ blowfish-1.0.0a:
     really want to try to optimize performance do "make bf_opts" and
     then run bf_opts.
 	
-zlib-1.2.5:
+zlib-1.2.8:
 
     Run "configure" and then make. It's a breeze!
 
