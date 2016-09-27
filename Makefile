@@ -53,8 +53,8 @@ BFLIB = ../blowfish-1.0.0a/libblowfish.a
 #ZINC = -I/usr/include
 #ZLIB = -lz
 
-ZINC = -I../zlib-1.2.5
-ZLIB = ../zlib-1.2.5/libz.a
+ZINC = -I../zlib-1.2.8
+ZLIB = ../zlib-1.2.8/libz.a
 
 # Location of bzlib include and library
 # Set these empty if you don't want bzib2 support
